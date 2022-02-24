@@ -57,7 +57,7 @@ public class TeacherManager implements TeacherService {
 
         return new SuccessResponse<List<Teacher>>()
                 .localDateTime(LocalDateTime.now())
-                .message("Teacher has been successfully created")
+                .message("Teachers has been successfully listed")
                 .payload(data)
                 .build();
     }
@@ -76,7 +76,7 @@ public class TeacherManager implements TeacherService {
         final var payload = optionalTeacher.orElseGet(optionalTeacher::orElseThrow);
         return new SuccessResponse<Teacher>()
                 .localDateTime(LocalDateTime.now())
-                .message("Teacher has been successfully created")
+                .message("Teacher has been successfully found")
                 .payload(payload)
                 .build();
     }
