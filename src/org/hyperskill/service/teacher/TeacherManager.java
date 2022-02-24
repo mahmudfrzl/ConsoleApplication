@@ -2,18 +2,17 @@ package org.hyperskill.service.teacher;
 
 import org.hyperskill.domain.Teacher;
 import org.hyperskill.exception.ResourceException;
-import org.hyperskill.utility.response.Response;
-import org.hyperskill.utility.response.SuccessResponse;
+import org.hyperskill.core.response.Response;
+import org.hyperskill.core.response.SuccessResponse;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.function.Supplier;
 
 import static java.util.stream.Collectors.*;
 
-import static org.hyperskill.utility.Constant.*;
+import static org.hyperskill.core.utility.Constant.*;
 
 public class TeacherManager implements TeacherService {
     private static TeacherManager  teacherManager = null;

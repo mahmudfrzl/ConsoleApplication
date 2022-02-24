@@ -2,7 +2,7 @@ package org.hyperskill.service.teacher;
 
 import org.hyperskill.domain.Teacher;
 import org.hyperskill.service.GeneralService;
-import org.hyperskill.utility.response.Response;
+import org.hyperskill.core.response.Response;
 
 import java.util.List;
 

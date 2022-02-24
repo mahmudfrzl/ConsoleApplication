@@ -1,4 +1,4 @@
-package org.hyperskill.utility.response;
+package org.hyperskill.core.response;
 
 public class ErrorResponse<T> extends Response.ResponseBuilder<T> {
     @Override

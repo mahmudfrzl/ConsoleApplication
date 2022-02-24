@@ -1,4 +1,4 @@
-package org.hyperskill.utility.response;
+package org.hyperskill.core.response;
 
 import java.time.LocalDateTime;
 

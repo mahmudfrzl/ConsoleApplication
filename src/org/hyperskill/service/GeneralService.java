@@ -1,6 +1,6 @@
 package org.hyperskill.service;
 
-import org.hyperskill.utility.response.Response;
+import org.hyperskill.core.response.Response;
 
 import java.util.List;
 
