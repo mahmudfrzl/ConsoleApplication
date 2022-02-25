@@ -1,10 +1,12 @@
 package org.hyperskill.service.teacher;
 
+import org.hyperskill.core.utility.FileUtil;
 import org.hyperskill.domain.Teacher;
 import org.hyperskill.exception.ResourceException;
 import org.hyperskill.core.response.Response;
 import org.hyperskill.core.response.SuccessResponse;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -40,12 +42,14 @@ public class TeacherManager implements TeacherService {
 
         teachers.add(payload);
 
+        FileUtil.writeObjectToFile("teacher",payload);
+
 
 
         return new SuccessResponse<Teacher>()
                 .localDateTime(LocalDateTime.now())
                 .message("Teacher has been successfully created")
-                .payload(payload)
+                .payload((Teacher) FileUtil.readFromFile("teacher"))
                 .build();
 
     }

@@ -3,7 +3,7 @@ package org.hyperskill.domain;
 import java.math.BigDecimal;
 
 public class Teacher extends Person{
-    private BigDecimal salary;
+    private final BigDecimal salary;
 
     public BigDecimal getSalary() {
         return salary;

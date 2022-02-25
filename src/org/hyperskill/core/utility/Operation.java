@@ -1,11 +1,14 @@
 package org.hyperskill.core.utility;
 
 import org.hyperskill.enums.Menu;
+
+import java.io.IOException;
+
 import static org.hyperskill.core.utility.Constant.scanner;
 import static org.hyperskill.core.utility.MenuUtil.teacherService;
 public class Operation {
 
-    public static void operation(){
+    public static void operation() throws IOException {
 
         int operation = scanner.nextInt();
         if(operation == Menu.SYSTEM_EXIT.getStatus()){

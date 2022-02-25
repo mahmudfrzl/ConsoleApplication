@@ -5,12 +5,14 @@ import org.hyperskill.enums.Menu;
 import org.hyperskill.service.teacher.TeacherManager;
 import org.hyperskill.service.teacher.TeacherService;
 import static org.hyperskill.core.utility.Scan.*;
+
+import java.io.IOException;
 import java.math.BigDecimal;
 
 public class MenuUtil {
     protected static final TeacherService teacherService = TeacherManager.getInstance();
 
-    protected static void create(){
+    protected static void create() throws IOException {
         String name = scanName();
         String surname = scanSurName();
         int age = scanAge();
